@@ -5,7 +5,7 @@ public class LeerTiposDatos {
         //Leer distintos tipos de datos
         //Leer un tipo int
         var consola = new Scanner(System.in);
-        System.out.println("Ingresa tu edad: ");
+        System.out.print("Ingresa tu edad: ");
         var edad = consola.nextInt();
         System.out.println("Edad: " + edad);
     }
