@@ -33,11 +33,17 @@ public class Reto_Seccion5 {
         //Numero aleatorio
         Random random = new Random();
         var numeroAleatorio = random.nextInt(0000, 10000);
-        System.out.println("Numero aleatorio generado: " + numeroAleatorio);
+        var numeroAleatorioFormat = String.format("%04d", numeroAleatorio);
+        System.out.println("Numero aleatorio generado: " + numeroAleatorioFormat);
 
         //ID Unico
         var iD = subcadenaNombre + subcadenaApellido + subcadenaAnio + numeroAleatorio;
-        System.out.println("El id único es: " + iD);
+        System.out.printf("""
+    %n %s, 
+    \t Tu id único es:
+    \t %s 
+    """, nombre, iD);
+
     }
 
 }
