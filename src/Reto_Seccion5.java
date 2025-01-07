@@ -3,9 +3,9 @@ import java.util.Scanner;
 
 public class Reto_Seccion5 {
     /**El programa debe solicitar al usuario:
-     * -Nombre: Jacobo -> JA
-     * - Apellido: Jimenez -> JI
-     * - Año nacimiento: 1987 -> 87
+     * -Nombre: James -> JA
+     * - Apellido: Jamison -> JA
+     * - Año nacimiento: 1991 -> 91
      * - Debe generar un número aleatorio de 4 dígitos, si es menor deberá completarse con ceros a la izquierda. P.ej: 1234
      * - ID Unico: JAJI871234
      * **/
