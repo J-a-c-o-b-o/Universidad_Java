@@ -12,6 +12,12 @@ public class PrestamoLibros {
         var kmsToInt = Integer.parseInt(kms);
         var noMoreThan3kms = kmsToInt <= 3?true:false;
         System.out.println("noMoreThan3kms = " + noMoreThan3kms);
+        if(noMoreThan3kms){
+            System.out.println("We can lend you books");
+        }else{
+            System.out.println("We CAN'T lend you books");
+        }
+
 
     }
 }
