@@ -7,7 +7,7 @@ public class Reto_Seccion5 {
      * - Apellido: Jamison -> JA
      * - Año nacimiento: 1991 -> 91
      * - Debe generar un número aleatorio de 4 dígitos, si es menor deberá completarse con ceros a la izquierda. P.ej: 1234
-     * - ID Unico: JAJI871234
+     * - ID Unico: JAJA911234
      * **/
     public static void main(String[] args) {
         //Nombre
