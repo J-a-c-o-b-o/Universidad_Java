@@ -1,3 +1,5 @@
+package Seccion4;
+
 public class Reto_Seccion4 {
     public static void main(String[] args) {
         //Generador de Email a partir de los siguientes datos:

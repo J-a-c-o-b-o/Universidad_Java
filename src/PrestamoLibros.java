@@ -9,7 +9,7 @@ public class PrestamoLibros {
         System.out.println("How many kilometres do you live from here?");
         var kms = console.nextLine();
         System.out.println("kms = " + kms);
-        var kmsToInt = Integer.parseInt(kms);
+        var kmsToInt = Float.parseFloat(kms);
         var noMoreThan3kms = kmsToInt <= 3?true:false;
         System.out.println("noMoreThan3kms = " + noMoreThan3kms);
         if(noMoreThan3kms){
