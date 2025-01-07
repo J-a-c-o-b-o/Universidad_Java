@@ -1,13 +1,13 @@
 public class Reto_Seccion4 {
     public static void main(String[] args) {
         //Generador de Email a partir de los siguientes datos:
-        var nombreUsuario = "Jacobo Jim Pul";
+        var nombreUsuario = "James Jameson Chivas";
         var nombreEmpresa = "Global Mentoring";
         var extensionDominio = ".com.es";
 
-        /**Tengo que transformar los anteriores datos para que me genere lo siguiente: Usuario Normalizado = "jacobo.jim.pul" Dominio Email Normalizado = "@.globalmentoring.com.es"**/
+        /**Tengo que transformar los anteriores datos para que me genere lo siguiente: Usuario Normalizado = "james.jam.chi" Dominio Email Normalizado = "@.globalmentoring.com.es"**/
 
-        //Para generar este resultado final: "jacobo.jim.pul.@globalmentoring.com.es";
+        //Para generar este resultado final: "james.jam.chi.@globalmentoring.com.es";
 
         //Empezar:
         var reemplazaEspacioUsuario = nombreUsuario.replace(' ', '.');
