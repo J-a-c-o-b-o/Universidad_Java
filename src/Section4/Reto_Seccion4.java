@@ -1,4 +1,4 @@
-package Seccion4;
+package Section4;
 
 public class Reto_Seccion4 {
     public static void main(String[] args) {

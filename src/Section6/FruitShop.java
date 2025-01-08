@@ -1,4 +1,4 @@
-package Seccion6;
+package Section6;
 import java.util.Scanner;
 
 public class FruitShop {

@@ -1,4 +1,4 @@
-package Seccion5;
+package Section5;
 
 import java.util.Random;
 import java.util.Scanner;

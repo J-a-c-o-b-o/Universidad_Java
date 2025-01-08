@@ -1,3 +1,5 @@
+package Section6;
+
 import java.util.Scanner;
 
 public class PrestamoLibros {

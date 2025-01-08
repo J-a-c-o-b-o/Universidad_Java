@@ -1,3 +1,5 @@
+package Section5;
+
 import java.util.Scanner;
 
 public class Clase_Scanner {
