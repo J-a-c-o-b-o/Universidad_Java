@@ -2,7 +2,7 @@ package Section6;
 
 import java.util.Scanner;
 
-public class PrestamoLibros {
+public class BookLoan {
     public static void main(String[] args) {
         System.out.println("Enter your name: ");
         var console = new Scanner(System.in); 

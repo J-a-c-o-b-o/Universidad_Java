@@ -2,7 +2,7 @@ package Section6;
 
 import java.util.Scanner;
 
-public class SistemaDescuentosVIP {
+public class VIPDiscountSystem {
     public static void main(String[] args) {
         System.out.println("*** Sistema de descuentos VIP");
         final var NO_PRODUCTOS_DESCUENTOS = 10;
