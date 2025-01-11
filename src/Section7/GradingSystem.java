@@ -22,6 +22,6 @@ public class GradingSystem {
             letterGrade = "You have entered incorrect punctuation";
         }
 
-        System.out.println("Your grade is = " + letterGrade);
+        System.out.println("Your grade isa = " + letterGrade);
     }
 }
