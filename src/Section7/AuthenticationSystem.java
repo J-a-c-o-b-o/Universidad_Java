@@ -20,25 +20,25 @@ public class AuthenticationSystem {
         Boolean validInputPassword = false;
 
         do{
-            System.out.println("Introduce your username: ");
+            System.out.println("Introduce your username to enter to the system: ");
             var userNameIntroduced = console.nextLine();
 
-            System.out.println("Introduce your password");
+            System.out.println("Introduce your password to enter to the system");
             var passwordIntroduced = console.nextLine();
 
-            if(finalUsername == userNameIntroduced && finalPassword == passwordIntroduced){
+            if(finalUsername.equals(userNameIntroduced)  && finalPassword.equals(passwordIntroduced)){
                 System.out.println("Welcome to the system");
                 validInputUsername = true;
                 validInputPassword = true;
-            }else if(finalUsername == userNameIntroduced && finalPassword != passwordIntroduced) {
+            }else if(finalUsername.equals(userNameIntroduced) && !finalPassword.equals(passwordIntroduced)) {
                 System.out.println("Invalid password: " + passwordIntroduced);
                 validInputPassword = false;
                 validInputUsername = true;
-            } else if (finalUsername != userNameIntroduced && finalPassword == passwordIntroduced) {
+            } else if (!finalUsername.equals(userNameIntroduced)  && finalPassword.equals(passwordIntroduced)) {
                 System.out.println("Invalid username: " + userNameIntroduced);
                 validInputPassword = true;
                 validInputUsername = false;
-            } else if (finalUsername != userNameIntroduced && finalPassword != passwordIntroduced) {
+            } else if (!finalUsername.equals(userNameIntroduced) && !finalPassword.equals(passwordIntroduced)) {
                 System.out.println("Your username: " + userNameIntroduced + " is wrong. " + "And your password: " + passwordIntroduced + " is wrong too");
             }
         }while(!validInputPassword && !validInputPassword || !validInputPassword && validInputUsername || !validInputUsername && validInputPassword);
