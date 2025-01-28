@@ -15,6 +15,7 @@ public class AverageRankings {
             System.out.println("value integers " + sumOfIntegers + " is equal to = " + sumOfIntegers);
         }
 
+        //Average
         average = (sumOfIntegers / integers.length);
         System.out.println("\n ***** The average of the grades is = " + average + " *****");
     }
