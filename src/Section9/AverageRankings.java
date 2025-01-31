@@ -4,52 +4,72 @@ import java.util.Scanner;
 
 public class AverageRankings {
     public static void main(String[] args) {
+        //Variables
         Scanner console = new Scanner(System.in);
-        int sumOfGrades = 0;
-        int grade = 0;
-        String finish = "true";
-        String answerOfFinish = "false";
-        int[] grades;
+        int sumOfGrades = 0; //counter
+        int grade = 0; //grade introduced
+        int[] grades = new int[5]; //all grades array
+        char answerOfFinish;
+        float sum = 0;
+        float average;
 
+        //Fill the array from console
+        while(sumOfGrades<5){
+            System.out.print("Introduce the grade (max: 5 grades): " + (sumOfGrades+1) + " = ");
+            grade = console.nextInt();
+            console.nextLine();
+            grades [sumOfGrades]= grade;
+            sumOfGrades ++;
 
-        while(sumOfGrades < 10 || answerOfFinish == "false"){
-            System.out.println("Introduce the grade (max: 10 grades): ");
-            grade = Integer.parseInt(console.nextLine());
-                /*if (grade > 10) {
-                    System.out.println("The max grade is 10");
-                }*/
-            grades = new int[grade];
-            sumOfGrades += sumOfGrades;
-            System.out.println("Are you finish of introduce the grades? (true/false): ");
-            answerOfFinish = console.nextLine();
-            System.out.println("answerOfFinish = " + answerOfFinish);
-            if(answerOfFinish.equals(finish) || sumOfGrades >= 10){
-                console.close();
+            //If 5 values have already been introduced, display the message and calculate the average
+            if(sumOfGrades == 5){
+                System.out.println("You have reached the maximum limit of 5 scores. Entracted scores: ");
+                for(int i = 0; i < sumOfGrades; i++){
+                    System.out.println("The grade introduced in position: " + (i+1) + " is = " + grades[i]);
+                }
+                for(int i = 0; i<sumOfGrades; i++){
+                    sum += grades[i];
+                }
+                average = sum / sumOfGrades;
+                System.out.println("Average of grades is = " + average);
+                break;
             }
 
-        } ;
+            //Ask if the user is over (only if the limit has not been reached)
+            System.out.println("Are you finished of introduce the grades? (t/f): ");
+            answerOfFinish = console.nextLine().charAt(0);
+            if(answerOfFinish == 't') {
+                System.out.println("You are finished of introduced the grades");
+                for (int i = 0; i < sumOfGrades; i++) {
+                    sum += grades[i];
+                }
+                average = sum / sumOfGrades;
+                System.out.println("Average of grades is = " + average);
+                break;
+            }
+        }/*end of while sumOfGrades < 5. Every grade introduced by console, the program continue with the next
+         if sumOfGrade < 5 */
 
-            System.out.println("You are finished of introduced the grades");
+        //If the user didn't find the limit of 5, show the grades and average
+        if(sumOfGrades<5){
+            System.out.println("Grades introduced: ");
+            for(int i = 0; i<sumOfGrades; i++){
+                System.out.println(grades[i]);
+            }
+            if (sumOfGrades > 0){
+                for(int i = 0; i<sumOfGrades; i++){
+                    sum += grades[i];
+                }
+                average = sum/sumOfGrades;
+                System.out.println("average = " + average);
+            }else{
+                System.out.println("You didn't introduce grades for calculating the average.");
+            }
+
+            //Message of exit
+            System.out.println("Program finished.");
             console.close();
-
-
-
-            int sumOfIntegers = 0;
-            int totalSumOfIntegers = 0;
-            int average = 0;
-
-        /*for(var i = 0; i<grades.length; i++){
-            System.out.println("\n*********** i in index: " + i + " **********");
-            System.out.println("Integer value = " + grades[i]);
-            System.out.println("sumOfIntegers = " + sumOfIntegers);
-            sumOfIntegers += grades[i];
-            System.out.println("value integers " + sumOfIntegers + " is equal to = " + sumOfIntegers);
-        }*/
-
-            //Average
-        /*average = (sumOfIntegers / grades.length);
-        System.out.println("\n ***** The average of the grades is = " + average + " *****");*/
-
+        }
     }
 }
 

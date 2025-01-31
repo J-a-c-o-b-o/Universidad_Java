@@ -12,7 +12,7 @@ public class Arrays {
         System.out.println("third position = " + integers[3]);
 
         for(var i = 0; i< integers.length; i++){
-            System.out.println("The content of the array is = " + integers);
+            System.out.println("The content of the array is = " + integers[i]);
         }
 
         //promedio clasificaciones
