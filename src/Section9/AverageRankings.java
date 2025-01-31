@@ -66,7 +66,7 @@ public class AverageRankings {
                 System.out.println("You didn't introduce grades for calculating the average.");
             }
 
-            //Message of exit
+            //Message of exit. End of the program.
             System.out.println("Program finished.");
             console.close();
         }
