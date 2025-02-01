@@ -1,5 +1,7 @@
 package Section10;
 
+import java.util.Scanner;
+
 public class Matrixes {
     public static void main(String[] args) {
         final var ROWS = 2;
@@ -19,8 +21,31 @@ public class Matrixes {
             for(var j=0; j<COLUMNS ;j++){
                 System.out.println("matrix[" + i + "][" + j +"] = " + matrix[i][j]);
             }
-
         }
+
+        //Matrix2
+        System.out.println("");
+        int rows, columns;
+        var console = new Scanner(System.in);
+        System.out.print("Give the rows for matrix2: ");
+        rows = Integer.parseInt(console.next());
+        System.out.print("Give the columns for matrix2: ");
+        columns = Integer.parseInt(console.next());
+        var matrix2 = new int [rows][columns];
+
+        //I'll give the values to the matrix corresponding with the sum of position (e.g: matrix2[1][2] = 3)
+        for(var i=0; i<rows ;i++){
+            for(var j=0; j<columns ;j++){
+                matrix2 [i][j]= i+j;
+            }
+        }
+
+        for(var i=0; i<rows ;i++){
+            for(var j=0; j<columns ;j++){
+                System.out.println("matrix2[" + i + "][" + j +"] = " + matrix2[i][j]);
+            }
+        }
+
 
     }
 }
