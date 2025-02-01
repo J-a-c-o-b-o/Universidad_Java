@@ -39,13 +39,29 @@ public class Matrixes {
                 matrix2 [i][j]= i+j;
             }
         }
-
+        //Show the values of the matrix2
         for(var i=0; i<rows ;i++){
             for(var j=0; j<columns ;j++){
                 System.out.println("matrix2[" + i + "][" + j +"] = " + matrix2[i][j]);
             }
         }
-
+        //For change some values for console
+        System.out.print("Enter the position of the row in matrix2 for row: ");
+        var rowPosition = Integer.parseInt(console.next());
+        System.out.print("Enter the position of the row in matrix2 for column: ");
+        var columnPosition = Integer.parseInt(console.next());
+        System.out.print("Which is the new value?: ");
+        int newValue = Integer.parseInt(console.next());
+        matrix2[rowPosition][columnPosition] = newValue;
+        System.out.println("matrix2 in row [" + rowPosition + "]" + " and column [" + columnPosition + "]" + " = " +
+                " is = " + newValue);
+        //All the values with new value
+        System.out.println("\n These are all the values including the new value in the indicated position: ");
+        for(var i=0; i<rows ;i++){
+            for(var j=0; j<columns ;j++){
+                System.out.println("matrix2[" + i + "][" + j +"] = " + matrix2[i][j]);
+            }
+        }
 
     }
 }
