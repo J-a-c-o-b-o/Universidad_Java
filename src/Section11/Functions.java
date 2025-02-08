@@ -20,6 +20,17 @@ public class Functions {
         return e * f;
     }
 
+    static void RecursiveFunction(int number){
+        // Base case
+        if(number == 1)
+            System.out.println("Recursive function end in number one: " + number + " ");
+        else{
+            // Caso recursivo
+            RecursiveFunction(number - 1);
+            System.out.println("Recursive function rest 1 every time is called: " + number + " ");
+        }
+    }
+
     public static void main(String[] args) {
         //Void method is called for give a value as paramether
         greet("Hi");
@@ -36,5 +47,7 @@ public class Functions {
         //multiply method (returning multiply without declaring variables in method)
         String messageInMainMultiply = "multiply return variables f and d: ";
         System.out.println(multiply(2,4));;
+
+        RecursiveFunction(5);
     }
 }
