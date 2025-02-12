@@ -7,6 +7,10 @@ public class Person {
     String email;
     String smartphone;
 
+    //Constructor (If I don't put a constructor, Java will create a default one)
+    public Person(){
+    }
+
     //Methods
     public void showName(){
         System.out.println("The name is " + name + " and the surnane is " + surname);
