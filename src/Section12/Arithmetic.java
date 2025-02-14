@@ -4,6 +4,10 @@ public class Arithmetic {
     int operator1;
     int operator2;
 
+    //constructor overloading
+    //Void constructor (by default if isn't declared any constructor)
+    public Arithmetic(){}
+
     //Constructor with values
     public Arithmetic(int oper1, int oper2){
         System.out.println("Executing constructor");
