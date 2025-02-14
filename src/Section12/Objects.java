@@ -13,6 +13,12 @@ public class Objects {
         objectPerson.addName("Michael", "Robinson");
         //Method of the class Person through object
         objectPerson.showName();
+
+        //Instance of Arithmetic class (with parameters)
+        var arithmetic1 = new Arithmetic(2, 3);
+
+        //Method of class Arithmetic
+        arithmetic1.sum();
     }
 }
 

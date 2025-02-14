@@ -7,7 +7,7 @@ public class Person {
     String email;
     String smartphone;
 
-    //Constructor (If I don't put a constructor, Java will create a default one)
+    //Constructor (It doesn't have type: String, int or void, E.g.) (If I don't put a constructor, Java will create a default one)
     public Person(){
     }
 
