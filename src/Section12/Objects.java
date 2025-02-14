@@ -14,8 +14,15 @@ public class Objects {
         //Method of the class Person through object
         objectPerson.showName();
 
-        //Instance of Arithmetic class (with parameters)
+        //Instance of Arithmetic class (with values for the object)
         var arithmetic1 = new Arithmetic(2, 3);
+
+        //Method of class Arithmetic
+        arithmetic1.sum();
+
+        //Giving other values through variables of class
+        arithmetic1.operator1 = 4;
+        arithmetic1.operator2 = 6;
 
         //Method of class Arithmetic
         arithmetic1.sum();
