@@ -26,6 +26,8 @@ public class Objects {
 
         //Method of class Arithmetic
         arithmetic1.sum();
+        System.out.println("Memory adress of object 'arithmetic1' = " + arithmetic1);
+
     }
 }
 
