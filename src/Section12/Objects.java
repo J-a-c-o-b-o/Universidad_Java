@@ -16,6 +16,12 @@ public class Objects {
 
         //Instance of Arithmetic class (with values for the object)
         var arithmetic1 = new Arithmetic(2, 3);
+        System.out.println("Attribute 1: " + arithmetic1.getOperator1());
+        System.out.println("Attribute 2: " + arithmetic1.getOperator2());
+        arithmetic1.setOperator1(10);
+        arithmetic1.setOperator2(15);
+        System.out.println("Attribute 1: " + arithmetic1.getOperator1());
+        System.out.println("Attribute 2: " + arithmetic1.getOperator2());
 
         //Method of class Arithmetic
         arithmetic1.sum();
@@ -27,7 +33,6 @@ public class Objects {
         //Method of class Arithmetic
         arithmetic1.sum();
         System.out.println("Memory adress of object 'arithmetic1' = " + arithmetic1);
-
     }
 }
 
