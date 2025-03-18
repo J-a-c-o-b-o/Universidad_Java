@@ -7,4 +7,5 @@ public class Animal {
     protected void sleep(){
         System.out.println("I sleep a lot");
     }
+
 }
