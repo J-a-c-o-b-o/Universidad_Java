@@ -8,5 +8,7 @@ class Dog extends Animal {
     //Overwritting method
     protected void sleep(){
         System.out.println("I sleep 15 hours per day");
+        System.out.println("Method from father class:");
+        super.sleep();
     }
 }
